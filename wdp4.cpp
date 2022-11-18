@@ -33,29 +33,38 @@ void zadanie_2()
 
 }
 
-void zadanie_3() // do dokonoczenia
+void zadanie_3() 
 
 {
-	int godzina, do_przodu;
-	string pora;
-
-	cout << "Podaj godzine" << endl;
-	cin >> godzina;
-	cout << "AM czy PM ? " << endl;
-	cin >> pora;		//am albo pm
-	cout << "Ile godzin w przod?" << endl;
-	cin >> do_przodu;
-
-	int wyn = (pora.compare("am"));
-
-
-	if (godzina > 12 || wyn == 1)
-	{
-		int wyn = (pora.compare("pm"));
-		if (wyn == 1)
-		{
-			cout << "Nie prawidlowy zapis" << endl;
-		}
+	 int hour, do_przodu;
+    cout << " Podaj godzine: " << endl;
+    cin >> hour;
+    if (hour > 12 || hour < 1) {
+        cout << "E-1  Nieprawidlowy zapis " << endl;
+    } else {
+        string time;
+        string am = "am" , pm = "pm";
+        cout << "am czy pm?" << endl;
+        cin >> time;
+        cout << "Ile godzin do przodu ?" << endl;
+        cin >> do_przodu;
+        int po = (do_przodu % 12) + hour;
+        int ostateczny = po - 12;
+        if (time.compare(am) == 0) {
+            if(po > 12) {
+                cout << ostateczny << " pm" << endl;
+            } else {
+                cout << po << " am" << endl;
+            }
+        }
+        else if (time.compare(pm) == 0) {
+            if(po > 12) {
+                cout << ostateczny << " am" << endl;
+            } else {
+                cout << po << " pm" << endl;
+            }
+        }
+    }
 
 
 
@@ -66,7 +75,7 @@ void zadanie_3() // do dokonoczenia
 int main()
 {
 
-	}
+	
 	
 
 
