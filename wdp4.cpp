@@ -36,10 +36,10 @@ void zadanie_2()
 void zadanie_3() 
 
 {
-	 int hour, do_przodu;
+	 int godzina, do_przodu;
     cout << " Podaj godzine: " << endl;
-    cin >> hour;
-    if (hour > 12 || hour < 1) {
+    cin >> godzina;
+    if (godzina > 12 || godzina < 1) {
         cout << "E-1  Nieprawidlowy zapis " << endl;
     } else {
         string time;
@@ -48,7 +48,7 @@ void zadanie_3()
         cin >> time;
         cout << "Ile godzin do przodu ?" << endl;
         cin >> do_przodu;
-        int po = (do_przodu % 12) + hour;
+        int po = (do_przodu % 12) + godzina;
         int ostateczny = po - 12;
         if (time.compare(am) == 0) {
             if(po > 12) {
