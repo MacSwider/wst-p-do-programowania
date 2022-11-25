@@ -103,13 +103,13 @@ void zad4(int argA[], int ArgB[], int ArgC[])
 
 		if (argA[i] == ArgB[i] && argA[i] == ArgC[i])
 		{
-			cout << "3 tablice maja taka sama wartosc: " << i+1 << endl;
+			cout << "3 tablice maja taka sama wartosc dla indeksu: " << i+1 << endl;
 		}
 		else if (argA[i] == ArgB[i] || argA[i] == ArgC[i] || ArgB[i] == ArgC[i])
 		{
-			cout << "2 tablice maja taka sama wartosc: " << i + 1 << endl;
+			cout << "2 tablice maja taka sama wartosc dla indeksu: " << i + 1 << endl;
 		}
-		else { cout << "Zadna z tablic nie ma takich samych wartosci: " << i + 1 << endl; }
+		else { cout << "Zadna z tablic nie ma takich samych wartosci dla indeksu: " << i + 1 << endl; }
 	}
 }
 
