@@ -132,3 +132,29 @@ int main()
 
 	zad4(Tablica_A, Tablica_B, Tablica_C);
 }
+
+
+/*
+int zad5a(string b)
+{
+	int counter = 0;
+	for (int i = 0; i < b.length(); i++)
+	{
+		if(b[i] >= 'a' and b[i] <= 'z')
+		{
+			counter++;
+		}
+	}
+	return counter;
+}
+
+int main()
+{
+	int wynik_a;
+	string a;
+	cout << "wprowadz ciag znakow" << endl;
+	cin >> a;
+	wynik_a = zad5a(a);
+	cout << wynik_a;
+}
+*/
